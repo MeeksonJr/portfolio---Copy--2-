@@ -1,0 +1,114 @@
+.hero-about {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  margin-top: 5rem;
+}
+
+.hero-section, .about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+  text-align: center;
+  background-color: #000; /* Black background for the hero section */
+}
+
+.hero-section {
+  background-color: #000; /* Black background for the hero section */
+}
+
+.about-container {
+  background-color: #0000; /* Light background for the about section */
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Gap between photo and content */
+  border-radius: 10px; /* Rounded corners for the container */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 1700px; /* Limit maximum width */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.about-image {
+  width: 450px;
+  height: 450px;
+  margin-right: 5rem;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  object-fit: cover; /* Ensure image covers the circle properly */
+}
+
+.about-text {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.about-text h1 {
+  font-size: 2rem;
+  margin: 0;
+  color: #333; /* Darker text color for better contrast */
+  font-weight: 600;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  color: #666; /* Slightly lighter text color for readability */
+  line-height: 1.6;
+  margin-top: 10px; /* Space between heading and paragraph */
+}
+
+.cv-download-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #ff9000; /* Orange button */
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.cv-download-button:hover {
+  background-color: #e65c00; /* Darker orange on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px; /* Adjust padding for smaller screens */
+  }
+
+  .about-image {
+    width: 150px;
+    height: 150px;
+    margin: 0 0 20px; /* Margin below the image */
+  }
+
+  .about-text {
+    margin: 20px 0 0; /* Margin above the text */
+    padding: 0 15px; /* Horizontal padding for better text alignment */
+    max-width: 100%; /* Ensure text doesn't overflow container */
+  }
+}
+
+@media (max-width: 480px) {
+  .about-text {
+    font-size: 0.9rem; /* Slightly smaller text on very small screens */
+    padding: 0 10px; /* Reduce horizontal padding for smaller screens */
+  }
+
+  .about-image {
+    width: 220px; /* Smaller image on very small screens */
+    height: 220px;
+    margin-top: 1.5rem;
+  }
+}

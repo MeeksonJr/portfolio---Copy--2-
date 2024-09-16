@@ -1,0 +1,67 @@
+/* Timeline Section Styling */
+.timeline-section {
+  position: relative;
+  padding: 50px 30px;
+  background-color: #1b1b1b; /* Dark background for the section */
+  color: #ffffff; /* White text color */
+  overflow: hidden;
+}
+
+.timeline-title {
+  font-size: 2.5rem;
+  color: #ff6600; /* Orange color for the title */
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.timeline {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.timeline-inner {
+  display: flex;
+  width: 200%; /* Double the width to accommodate the duplicate items */
+  animation: scroll 20s linear infinite;
+}
+
+.timeline-item {
+  flex: 1 0 auto;
+  background-color: #2c2c2c; /* Dark grey background for items */
+  padding: 20px;
+  margin-right: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  position: relative;
+  min-width: 300px; /* Minimum width for each card */
+}
+
+.timeline-item.active {
+  background-color: #333333; /* Slightly lighter grey when active */
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.date {
+  font-size: 1rem;
+  color: #ff6600; /* Orange color for the date */
+  margin-bottom: 10px;
+}
+
+.content {
+  font-size: 1.2rem;
+  color: #cccccc; /* Light grey for content */
+}
+
+/* Animation for continuous scroll effect */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

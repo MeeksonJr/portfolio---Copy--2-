@@ -1,0 +1,35 @@
+/* Footer Styling */
+.footer-container {
+  background-color: #1a1a1a; /* Dark background for better contrast */
+  color: #fff;
+  padding: 20px 10px; /* Adjusted padding for better spacing */
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px; /* Max width for content alignment */
+  margin: 0 auto;
+}
+
+.footer-links {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #ff9000; /* Orange color for links */
+  text-decoration: none;
+  margin: 0 15px; /* Increased margin for better spacing */
+  font-size: 1.1rem;
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.footer-links a:hover {
+  color: #e65c00; /* Darker orange on hover */
+  text-decoration: underline;
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.footer-copy {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}

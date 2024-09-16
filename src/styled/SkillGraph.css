@@ -1,0 +1,43 @@
+/* Skills Graph Styling */
+.skill-graph {
+  text-align: center;
+  padding: 60px 30px;
+  background-color: #f9f9f9; /* Slightly off-white for better contrast */
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  max-width: 90%; /* Responsive width */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skill-buttons {
+  margin-bottom: 30px;
+}
+
+.skill-button {
+  background-color: #FF6600; /* Orange button */
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 20px; /* Reduced padding for better fit */
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Arial', sans-serif;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 16px; /* Slightly smaller font size */
+}
+
+.skill-button.active {
+  background-color: #e65c00; /* Darker orange for active button */
+}
+
+.skill-button:hover {
+  background-color: #e65c00;
+  transform: scale(1.05);
+}
+
+.radar-chart {
+  max-width: 600px; /* Adjust width for better fit */
+  margin: 0 auto; /* Center align */
+}

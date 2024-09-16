@@ -1,0 +1,64 @@
+/* Contact Form Container */
+.contact-form-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 20px;
+  background-color: #1f1f1f;
+  border-radius: 10px;
+}
+
+.contact-form-container h2 {
+  color: #ff9000; /* Orange title color */
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  background-color: #444;
+  border: 1px solid #ff9000; /* Orange border on focus */
+}
+
+input::placeholder, textarea::placeholder {
+  color: #aaa;
+}
+
+button {
+  background-color: #ff9000; /* Orange button background */
+  color: #fff;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  align-self: center;
+}
+
+button:hover {
+  background-color: #e65c00; /* Darker orange on hover */
+  transform: scale(1.05); /* Slight grow effect */
+}
+
+.form-status {
+  margin-top: 15px;
+  color: #ff9000; /* Orange color for status messages */
+  text-align: center;
+  font-size: 1rem;
+}
